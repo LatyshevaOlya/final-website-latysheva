@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blueprint Events - Портфолио</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="portfolio.html" class="active">Портфолио</a></li>
+                    <li><a href="services.html">Мероприятия</a></li>
+                    <li><a href="#">Сотрудничество</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="../images/1.png" alt="Blueprint Events - главное изображение">
+                <div class="hero-overlay">
+                    <div class="hero-content">
+						<button class="cta-button">Заказать мероприятие</button>
+                        <div class="logo-large">
+                            <h1>ПОРТФОЛИО ПРОЕКТОВ</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="portfolio">
+            <div class="filter-container">
+                <button class="filter-toggle" id="filterToggle">
+                    Фильтр
+                    <span class="filter-arrow">▼</span>
+                </button>
+                
+                <aside class="filter-sidebar" id="filterSidebar">
+                    <div class="filter-options">
+                        <div class="filter-group">
+                            <label class="filter-option">
+                                <input type="radio" name="event-type" value="all" checked>
+                                <span class="radiomark"></span>
+                                Все мероприятия
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="event-type" value="wedding">
+                                <span class="radiomark"></span>
+                                Свадьба
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="event-type" value="anniversary">
+                                <span class="radiomark"></span>
+                                Юбилей
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="event-type" value="corporate">
+                                <span class="radiomark"></span>
+                                Корпоратив
+                            </label>
+                            <label class="filter-option">
+                                <input type="radio" name="event-type" value="graduation">
+                                <span class="radiomark"></span>
+                                Выпускной
+                            </label>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+            <article class="projects-grid">
+                <figure class="project-item" data-category="wedding">
+                    <img src="../images/w3.jpg" alt="Проект 1">
+                </figure>
+                <figure class="project-item" data-category="corporate">
+                    <img src="../images/41.jpg" alt="Проект 2">
+                </figure>
+                <figure class="project-item" data-category="anniversary">
+                    <img src="../images/hb22.jpg" alt="Проект 3">
+                </figure>
+                <figure class="project-item" data-category="graduation">
+                    <img src="../images/31.jpg" alt="Проект 4">
+                </figure>
+                <figure class="project-item" data-category="wedding">
+                    <img src="../images/w2.jpg" alt="Проект 5">
+                </figure>
+                <figure class="project-item" data-category="corporate">
+                    <img src="../images/42.jpg" alt="Проект 6">
+                </figure>
+            </article>
+        </div>
+    </main>
+	
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Контакты</h3>
+                <p class="phone">+7 (953) 245 35 35</p>
+                <p class="email">blueprintevents@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <a href="#" class="policy-link">политика обработки персональных данных</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
